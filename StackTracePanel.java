@@ -55,6 +55,7 @@ final class StackTracePanel extends JPanel {
             r.setClosedIcon(null);
             r.setLeafIcon(null);
         }
+        tree.addMouseListener(new StackFrameMenu(tree, root));
         add(new JScrollPane(tree), BorderLayout.CENTER);
         methodTracer.addUIListener(() -> {
             MethodItem selected = methodTracer.getActiveMethod();
@@ -68,6 +69,9 @@ final class StackTracePanel extends JPanel {
             update(methodTracer.getNewStackTraces());
         });
     }
+    
+
+
 
     public void update(Map<RecordedStackTrace, Long> stackTraces) {
         if (stackTraces == null) {
