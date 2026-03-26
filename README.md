@@ -1,6 +1,6 @@
 # Description
 
-JEP 520, *JFR Method Timing & Tracing*, added two new events for tracing and timing methods. Timing and tracing method invocations can help identify performance bottlenecks, optimize code, and find the root causes of bugs.
+[JEP 520: JFR Method Timing & Tracing](https://openjdk.org/jeps/520) introduces two new events for tracing and timing methods. Timing and tracing method invocations can help identify performance bottlenecks, optimize code, and find the root causes of bugs.
 
 To validate the design and demonstrate how third-party tools can use the JFR APIs with these two new events, a Java Swing program called **Method Tracer** was created.
 
