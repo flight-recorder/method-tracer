@@ -40,7 +40,8 @@ The management agent can also be started using `jcmd`:
 Examples:
 
     $ java MethodTracer.java example.com:7091
-    $ java MethodTracer.java service:jmx:rmi:///jndi/rmi://com.example:7091/jmxrmi
+    $ java MethodTracer.java \
+           service:jmx:rmi:///jndi/rmi://com.example:7091/jmxrmi
 
 Additional information on how to set up the management agent can be found [here](https://docs.oracle.com/en/java/javase/16/management/monitoring-and-management-using-jmx-technology.html). Method Tracer does not support SSL or authentication, so it should not be used in environments where security is a concern.
 
