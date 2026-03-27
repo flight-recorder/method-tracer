@@ -59,6 +59,7 @@ final class MethodItem implements Comparable<MethodItem> {
         return text.hashCode();
     }
 
+    @Override
     public String toString() {
         if (toString == null) {
             String t  = formatMethod(method, false);
@@ -70,7 +71,7 @@ final class MethodItem implements Comparable<MethodItem> {
         return toString;
     }
 
-    public static String formatMethod(RecordedMethod m, boolean compact) {
+    private static String formatMethod(RecordedMethod m, boolean compact) {
         StringBuilder sb = new StringBuilder();
         sb.append(m.getType().getName());
         sb.append(".");

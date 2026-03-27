@@ -51,9 +51,9 @@ final class MainFrame extends JFrame {
     private final JLabel cpuLabel;
 
     MainFrame(MethodTracer methodTracer) {
+        configureLookAndFeel();
         super(makeTitle(methodTracer.getResource()));
         this.methodTracer = methodTracer;
-        configureLookAndFeel();
         cpuLabel = createCpuLabel();
         MainPanel mainPanel = new MainPanel(methodTracer);
         mainPanel.add(createStatusBar(), BorderLayout.SOUTH);

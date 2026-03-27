@@ -59,8 +59,8 @@ final class StreamResource {
             return label;
         }
     }
-    private static final ComboItem ENTER_HOST_PORT = new ComboItem("Enter host and port ...", null);;
-    private static final ComboItem ENTER_JMX_URL = new ComboItem("Enter JMX Service URL ...", null);;
+    private static final ComboItem ENTER_HOST_PORT = new ComboItem("Enter host and port ...", null);
+    private static final ComboItem ENTER_JMX_URL = new ComboItem("Enter JMX Service URL ...", null);
     private static final ComboItem SELF = new ComboItem("Self (This Java Virtual Machine)", null);
 
     private final String label;

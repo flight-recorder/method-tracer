@@ -116,8 +116,7 @@ final class ControlPanel extends JPanel {
             if (sr != null) {
                 methodTracer.setStreamResource(sr);
             }
-        }
-        );
+        });
     }
 
     private void updateButtons() {

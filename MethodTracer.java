@@ -68,7 +68,7 @@ public final class MethodTracer {
             }
         } catch (IOException ioe) {
             System.err.println("ERROR: " + ioe.getMessage());
-            System.exit(0);
+            System.exit(1);
         }
     }
 
@@ -203,13 +203,17 @@ public final class MethodTracer {
     }
 
     public void pause() {
-        paused = true;
+        setPaused(true);
         refresh();
     }
 
     public void resume() {
-       paused = false;
+       setPaused(false);
        refresh();
+    }
+
+    private synchronized void setPaused(boolean paused) {
+        this.paused = paused;
     }
 
     private void reset() {

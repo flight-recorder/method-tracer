@@ -23,6 +23,13 @@
  * questions.
  */
 
+import static java.awt.GridBagConstraints.BOTH;
+import static java.awt.GridBagConstraints.CENTER;
+import static java.awt.GridBagConstraints.HORIZONTAL;
+import static java.awt.GridBagConstraints.LINE_END;
+import static java.awt.GridBagConstraints.LINE_START;
+import static java.awt.GridBagConstraints.NONE;
+
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -30,8 +37,6 @@ import java.awt.Insets;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.net.MalformedURLException;
-
-import static java.awt.GridBagConstraints.*;
 
 import javax.management.remote.JMXServiceURL;
 import javax.swing.JButton;
